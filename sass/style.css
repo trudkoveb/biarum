@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/opensans/opensans-regular.ttf");
+  src: url("../fonts/opensans/opensans-regular.woff2") format("woff2");
+  src: url("../fonts/opensans/opensans-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/myriad/myriadpro-regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GothicTrade';
+  src: url("../fonts/tradegothic/trade-gothic-bold-condensed-20.ttf");
+  src: url("../fonts/tradegothic/trade-gothic-bold-condensed-20.woff2") format("woff2");
+  src: url("../fonts/tradegothic/trade-gothic-bold-condensed-20.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.btn-reg {
+  background-color: #64c800;
+  border: none;
+  font-family: "MyriadPro";
+  color: #fff;
+  outline: none;
+  font-size: 18px;
+  width: 205px;
+  height: 35px;
+  border-radius: 30px;
+  cursor: pointer; }
+  .btn-reg:hover {
+    background-color: #67ad21; }
+  .btn-reg:focus {
+    background-color: #fff;
+    color: #888;
+    -webkit-box-shadow: 2px 2px 2px 2px #d5e8c1;
+    box-shadow: 2px 2px 2px 2px #d5e8c1; }
+  .btn-reg:active {
+    background-color: #497f12; }
+  .btn-reg.disabled {
+    background-color: #f5f5f5;
+    color: #c3c3c3; }
+
+h2.title {
+  font-family: "GothicTrade";
+  font-size: 52px;
+  text-align: center;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-transform: uppercase; }
+  h2.title.title-light {
+    color: #fff; }
+    h2.title.title-light span {
+      color: #64c800; }
+  h2.title.title-dark {
+    color: #3d3e46; }
+    h2.title.title-dark span {
+      color: #1b8aaa; }
+
+header {
+  background-color: #3f4049;
+  padding: 15px 0; }
+  header .header-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header .header-content .header-content__logo {
+      background: url(../../img/logo.png) no-repeat center/auto 100%;
+      width: 150px;
+      height: 43px; }
+    header .header-content nav ul li {
+      display: inline-block;
+      margin-right: 60px; }
+      header .header-content nav ul li a {
+        font-family: "OpenSans";
+        color: #fff;
+        text-decoration: none; }
+        header .header-content nav ul li a:hover {
+          border-bottom: 2px solid  #9e9fa3; }
+        header .header-content nav ul li a:focus {
+          color: #fcfefd;
+          font-weight: bold;
+          border-bottom: none; }
+        header .header-content nav ul li a:active {
+          text-shadow: 2px 6px 2px #000;
+          border-bottom: none; }
+
+.main-content .main-content__info {
+  background-image: url(../img/bg/bg-section-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 55px; }
+  .main-content .main-content__info p {
+    font-family: "MyriadPro";
+    margin-top: 0; }
+  .main-content .main-content__info p:nth-of-type(1) {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 0 60px; }
+  .main-content .main-content__info p:nth-of-type(2) {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 80px;
+    margin-top: 20px; }
+  .main-content .main-content__info p:nth-of-type(3) {
+    font-size: 20px;
+    line-height: 26px;
+    color: #64c800;
+    padding: 0 170px;
+    margin-top: 35px; }
+  .main-content .main-content__info p:nth-of-type(4) {
+    font-size: 25px;
+    line-height: 26px;
+    padding: 0 95px;
+    margin-top: 30px; }
+
+.main-content .main-content__form {
+  background-color: #f4f6f9;
+  padding-bottom: 160px; }
+  .main-content .main-content__form .container {
+    position: relative; }
+    .main-content .main-content__form .container:after {
+      content: '';
+      display: block;
+      background-image: url(../img/bg/bg-section-form-spray.png);
+      width: 1390px;
+      height: 313px;
+      position: absolute;
+      z-index: 2;
+      bottom: -160px;
+      right: -160px; }
+  .main-content .main-content__form .form-wrapper {
+    background-color: #fff;
+    padding-top: 55px;
+    position: relative;
+    z-index: 4;
+    position: relative; }
+    .main-content .main-content__form .form-wrapper:after {
+      content: '';
+      display: block;
+      background-image: url(../img/img-form-book.png);
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 429px;
+      position: absolute;
+      z-index: 2;
+      bottom: -160px;
+      left: 0; }
+    .main-content .main-content__form .form-wrapper p {
+      font-family: "MyriadPro";
+      font-size: 24px;
+      line-height: 34px;
+      color: #46505a;
+      text-align: center;
+      padding: 0 130px;
+      margin: 0;
+      padding-bottom: 80px; }
+    .main-content .main-content__form .form-wrapper form {
+      padding-left: 300px; }
+      .main-content .main-content__form .form-wrapper form > div {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
