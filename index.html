@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+  <link rel="stylesheet" href="src/css/unslider.css">
   <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
@@ -21,17 +22,150 @@
             <li><a href="#">Lorem 1</a></li>
             <li><a href="#">Lorem 2</a></li>
             <li><a href="#">Lorem 3</a></li>
-            <li><a href="#">Lorem 4</a></li>
+            <li><a class="disabled" href="#">Lorem 4</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="button">
           <button class="btn-reg">Lorem ipsum</button>
         </div>
+        <div class="mobile-menu-icon"></div>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#">Lorem 1</a></li>
+          <li><a class="disabled" href="#">Lorem 2</a></li>
+          <li><a href="#">Lorem 3</a></li>
+          <li><a href="#">Lorem 4</a></li>
+        </ul>
       </div>
     </div>
   </header>
 
   <div class="main-content">
+
+    <section class="main-content__big-slider">
+      <div class="big-slider">
+        <ul>
+          <li data-nav="nav title">
+            <p class="title">Lorem<br><span>1</span></p>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</p>
+            <p class="description">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></p>
+          </li>
+          <li data-nav="nav title">
+            <p class="title">Lorem<br><span>2</span></p>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</p>
+            <p class="description">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></p>
+          </li>
+          <li data-nav="nav title">
+            <p class="title">Lorem<br><span>3</span></p>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor</p>
+            <p class="description">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main-content__small-slider">
+      <div class="container">
+        <h2 class="title title-dark">Lorem <span>2</span></h2>
+        <div class="small-slider">
+          <ul>
+            <li>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <img src="img/slider/amelia.jpg" alt="Amelia">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.“</p>
+                <a href="#">Teacher 1<br>Pro Member</a>
+              </div>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <img src="img/slider/mccauley.jpg" alt="Mccauley">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"</p>
+                <a href="#">Teacher 2<br>Pro Member</a>
+              </div>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <img src="img/slider/kate.jpg" alt="Kate">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ”</p>
+                <a href="#">Teacher 3<br>Pro Member</a>
+              </div>
+            </li>
+            <li>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <img src="img/slider/amelia.jpg" alt="Amelia">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.“</p>
+                <a href="#">Teacher 1<br>Pro Member</a>
+              </div>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <img src="img/slider/mccauley.jpg" alt="Mccauley">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"</p>
+                <a href="#">Teacher 2<br>Pro Member</a>
+              </div>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <img src="img/slider/kate.jpg" alt="Kate">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ”</p>
+                <a class="disabled" href="#">Teacher 3<br>Pro Member</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="small-slider__mobile">
+          <ul>
+            <li>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <div class="border-top"></div>
+                  <img src="img/slider/img-mobile.jpg" alt="John">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.“</p>
+                <a href="#">Teacher 1<br>Pro Member</a>
+              </div>
+            </li>
+            <li>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <div class="border-top"></div>
+                  <img src="img/slider/img-mobile.jpg" alt="John">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.“</p>
+                <a href="#">Teacher 1<br>Pro Member</a>
+              </div>
+            </li>
+            <li>
+              <div class="slide-wrapper">
+                <div class="img-wrapper">
+                  <div class="border-top"></div>
+                  <img src="img/slider/img-mobile.jpg" alt="John">
+                  <div class="shadow"></div>
+                </div>
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.“</p>
+                <a class="disabled" href="#">Teacher 1<br>Pro Member</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="button">
+          <button class="btn-reg">Lorem ipsum</button>
+        </div>
+      </div>
+    </section>
 
     <section class="main-content__info">
       <div class="container">
@@ -51,24 +185,36 @@
         <h2 class="title title-dark">Lorem <span>4</span></h2>
         <div class="form-wrapper">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <form action="">
+          <img src="img/img-form-book.png" alt="Book">
+          <form action="#">
             <div>
-              <label for="">First name</label>
-              <input type="text" placeholder="First name">
+              <label for="name">First name</label>
+              <input type="text" id="name" placeholder="First name" onkeyup="checkParams()">
             </div>
             <div>
-              <label for="">Last name</label>
-              <input type="text" placeholder="Last name">
+              <label for="surname">Last name</label>
+              <input type="text" id="surname" placeholder="Last name" onkeyup="checkParams()">
             </div>
             <div>
-              <label for="">Email</label>
-              <input type="text" placeholder="Email">
+              <label for="mail">Email</label>
+              <input type="email" id="mail" placeholder="Email" onkeyup="checkParams()">
+            </div>
+            <div class="button">
+              <input type="submit" id="submit" class="btn-reg disabled" disabled value="Lorem ipsum">
             </div>
           </form>
         </div>
       </div>
     </section>
+    <a href="#"><img src="img/icon-arrow-btn.png" alt="4" width="47" height="49" class="scrollup"/></a>
   </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="src/unslider.js"></script>
+  <script src="src/main.js"></script>
+  <script>
+
+  </script>
 
 </body>
 </html>

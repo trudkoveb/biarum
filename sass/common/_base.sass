@@ -1,13 +1,49 @@
+body
+  background-color: #3f4049
+
 .container
   width: 960px
   margin: 0 auto
+  @media(#{$max_ipad})
+    width: 100%
+  @media(#{$min_ipad})and(#{$max_tablets--landscape})
+    width: 100%
 
 ul
   list-style: none
   padding: 0
   margin: 0
 
+a, button, input
+  outline: none
+
 // Common classes
+// Menu nav
+header
+  ul
+    li
+      display: inline-block
+      margin-right: 60px
+      @media(#{$min_ipad})and(#{$max_tablets})
+        margin-right: 10px
+      a
+        font-family: $font-opensans
+        color: $color-light
+        text-decoration: none
+        &:hover
+          border-bottom: 2px solid  #9e9fa3
+        &:focus
+          color: #fcfefd
+          font-weight: bold
+          border-bottom: none
+        &:active
+          text-shadow: 2px 6px 2px #000
+          border-bottom: none
+        &.disabled
+          color: #b0b2b5
+          pointer-events: none
+
+// Default btn
 .btn-reg
   background-color: $color-style
   border: none
@@ -19,19 +55,26 @@ ul
   height: 35px
   border-radius: 30px
   cursor: pointer
+  @media(#{$max_ipad})
+    width: 90%
+    border-radius: 4px
   &:hover
     background-color: #67ad21
   &:focus
     background-color: $color-light
     color: #888
-    -webkit-box-shadow: 2px 2px 2px 2px #d5e8c1
-    box-shadow: 2px 2px 2px 2px #d5e8c1
+    border: none
+    -webkit-box-shadow: 0 0 5px 5px #d5e8c1
+    box-shadow: 0 0 5px 5px #d5e8c1
   &:active
     background-color: #497f12
+    box-shadow: none
+    color: $color-light
   &.disabled
     background-color: #f5f5f5
     color: #c3c3c3
 
+// Default h2
 h2.title
   font-family: $font-gothic
   font-size: 52px
@@ -48,3 +91,30 @@ h2.title
     color: $section-title-dark
     span
       color: #1b8aaa
+  @media(#{$max_ipad})
+    padding-bottom: 40px
+    span
+      display: block
+
+// Shadow for small slider's item
+.shadow
+  position: relative
+  &:after
+    content: ''
+    display: block
+    background-image: url("../../img/shadow.png")
+    background-size: cover
+    width: 168px
+    height: 168px
+    position: absolute
+    bottom: -65px
+    left: 0
+    z-index: -1
+
+// Scroll btn
+.scrollup
+  position: fixed
+  bottom: 20px
+  right: 20px
+  display: none
+  z-index: 10
